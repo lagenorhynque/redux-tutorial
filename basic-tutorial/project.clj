@@ -6,8 +6,8 @@
 
   :min-lein-version "2.7.1"
 
-  :dependencies [[org.clojure/clojure "1.9.0"]
-                 [org.clojure/clojurescript "1.10.339"]
+  :dependencies [[org.clojure/clojure "1.10.0"]
+                 [org.clojure/clojurescript "1.10.520"]
                  [reagent "0.8.1"]]
 
   :source-paths ["src"]
@@ -17,7 +17,5 @@
             "fig:min"   ["run" "-m" "figwheel.main" "-O" "advanced" "-bo" "dev"]
             "fig:test"  ["run" "-m" "figwheel.main" "-co" "test.cljs.edn" "-m" basic-tutorial.test-runner]}
 
-  :profiles {:dev {:dependencies [[com.bhauman/figwheel-main "0.1.9"]
-                                  [com.bhauman/rebel-readline-cljs "0.1.4"]]
-                   }})
-
+  :profiles {:dev {:dependencies [[com.bhauman/figwheel-main "0.2.0"]
+                                  [com.bhauman/rebel-readline-cljs "0.1.4"]]}})
